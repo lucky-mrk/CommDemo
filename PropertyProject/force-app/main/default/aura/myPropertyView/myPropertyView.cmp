@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForAllPageTypes ,forceCommunity:availableForAllPageTypes ,lightning:isUrlAddressable">
+    <aura:attribute name="PropId" type="String"></aura:attribute>
+<aura:handler name ="init" value="{!this}" action="{!c.doinit}"></aura:handler>
+<!-- c:myMasterPropertyTab  PropertyId="{!v.propId}"></c:myMasterPropertyTab -->
+{v.propId}
+</aura:component>	
