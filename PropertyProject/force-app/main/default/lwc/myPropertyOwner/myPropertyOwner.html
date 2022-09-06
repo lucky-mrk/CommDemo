@@ -1,0 +1,35 @@
+<template>
+    <!-- <lightning-record-form 
+                                record-id="a015g00000bnT1wAAE" object-api-name="Property_Owner__c"
+                                layout-type="compact">
+        </lightning-record-form>  -->
+    <lightning-record-view-form record-id={propertyOwnerId} object-api-name="Property_Owner__c">
+        <lightning-layout multiple-rows>        
+            <div class="slds-box slds-grid slds-wrap sald-p-around_small" style="background-color:#ebf7e6;">
+               
+                <div class="slds-col" style="width:20%">
+                    <lightning-output-field  style="width:50px height:50px"
+
+                     field-name="Owner_Photo__c">
+                    </lightning-output-field>
+                </div>
+                <div class="slds-col sald-p-around_small" style="align:right; padding-left: 52px; ">
+               <h1>Name:</h1><lightning-output-field variant="label-hidden" style="color:brown;font-weight:bold;" label="Name"
+                     field-name="Owner_Name__c">
+                    </lightning-output-field> 
+                
+                    <h1>Email Id :</h1>
+                    <lightning-output-field variant="label-hidden" label="Email Id" style="color:brown;font-weight:bold;" field-name="Email__c">
+                    </lightning-output-field>
+                    <h1>Mobile No ::</h1>
+                    <lightning-output-field variant="label-hidden" label="Mobile No" style="color:brown;font-weight:bold;" field-name="Owner_Phone__c">
+                    </lightning-output-field>
+                    <h1>Address:</h1>
+                    <lightning-output-field variant="label-hidden" label="Address:" style="color:brown;font-weight:bold;" field-name="Owner_Address__c">
+                    </lightning-output-field>
+                </div>
+ 
+            </div>  
+        </lightning-layout>
+    </lightning-record-view-form>   
+</template>
