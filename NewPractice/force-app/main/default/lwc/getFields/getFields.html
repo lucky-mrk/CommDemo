@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Submit Your Enquiry" icon-name="standard:contact">
+        <div class="slds-p-around_small">
+            <lightning-record-view-form object-api-name={objectName} layout-type="compact" onsuccess={handleSuccess}>
+               
+                <lightning-input-field field-name="Field"></lightning-input-field>
+                <lightning-input-field field-name="PermissionsRead"></lightning-input-field>
+                <lightning-input-field field-name="PermissionsEdit"></lightning-input-field>
+            
+                    
+            </lightning-record-view-form>
+        </div>
+    </lightning-card>
+</template>
